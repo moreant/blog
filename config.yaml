@@ -49,7 +49,7 @@ params:
 
     comments:
         enabled: true
-        provider: disqus
+        provider: twikoo
 
         utterances:
             repo:
