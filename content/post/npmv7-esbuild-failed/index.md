@@ -23,8 +23,10 @@ Error: esbuild: Failed to install correctly
 
 
 ## 解决方法
-一顿百度之后找到了这个 issues [Broken install binary on macOS](https://github.com/evanw/esbuild/issues/462#issuecomment-771328459) 
-在执行 `npm run dev` 先执行以下命令即可
+一顿百度之后找到了这个 issues 
+> [Broken install binary on macOS](https://github.com/evanw/esbuild/issues/462#issuecomment-771328459) 
+
+因此解决办法是：在执行 `npm run dev` 前执行以下命令即可
 
 ```
 node node_modules/esbuild/install.js
