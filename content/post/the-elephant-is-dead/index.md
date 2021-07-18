@@ -3,7 +3,8 @@ title: "大象已死"
 date: 2021-07-15T23:09:48+08:00
 slug: "the-elephant-is-dead"
 description: 死得好
-image: under-the-dome.jpeg
+categories:
+    - think
 ---
 
 回形针无了，感觉很可惜。  
