@@ -147,6 +147,9 @@ related:
           weight: 200
 
 markup:
+    goldmark:
+        renderer:
+            unsafe: true
     tableOfContents:
         endLevel: 4
         ordered: true
