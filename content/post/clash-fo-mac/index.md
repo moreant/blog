@@ -1,5 +1,5 @@
 ---
-title: "macOS DMG 安装后无法打开，提示损坏"
+title: "Clash for Windows 在 macOS 安装后无法打开，提示损坏"
 date: 2021-08-14T04:02:21+08:00
 slug: "clash-fo-mac"
 description: sudo xattr -r -d com.apple.quarantine /Applications/Clash\ for\ Windows.app
