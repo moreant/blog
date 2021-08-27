@@ -1,7 +1,7 @@
 ---
 title: "m1 nvm 安装 node 异常"
 date: 2021-08-27T23:51:45+08:00
-slug: "macos-esbuild-failed"
+slug: "m1-install-nvm-error"
 description: "clang: error: no such file or directory: 'CXX=c++'"
 tags: 
     - javascript
