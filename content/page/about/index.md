@@ -1,5 +1,5 @@
 ---
-title: Aobut
+title: About
 description: 夫列子御风而行，泠然善也
 date: '2021-07-18'
 aliases:
