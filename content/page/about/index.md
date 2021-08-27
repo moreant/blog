@@ -20,7 +20,10 @@ menu:
 🏫 广州带专人  
 🧱 底层码农  
 ☕ Java+Js全栈  
+🤺 [GitHub](https://github.com/moreant/)  
+📃 [Blog](https://github.com/moreant/moreant.github.io)
 
+欢迎交换友链
 
 日常爱好看屏幕使用时间即可
 
