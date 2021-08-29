@@ -6,6 +6,7 @@ description: "clang: error: no such file or directory: 'CXX=c++'"
 image: terminal-error.png
 tags: 
     - javascript
+    - M1-Question
 categories:
     - dev
 ---
