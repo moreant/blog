@@ -11,12 +11,12 @@ categories:
 
 在项目的 .idea/workspace.xml 文件中，找到 
 
-```
+```xml
 <component name="PropertiesComponent">
-```
+```  
 
 下面添加一行
 
-```
+```xml
 <property name="dynamic.classpath" value="true" />
-```
+```  
