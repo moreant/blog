@@ -7,3 +7,4 @@ categories:
 ---
 
 因为这个主题好看，我从hexo转到了hugo。
+Webify Test
