@@ -1,9 +1,9 @@
 ---
 title: "ssh自动登录"
-date: 2021-08-30T01:23:15+08:00
+date: "2021-09-29T23:09:11+08:00"
 slug: "ssh-auto-login"
 description: "只需要 ssh name 就登录了"
-image: ssh-logo.jpg
+image: ssh-logo.png
 tags: 
     - linux
 categories:
@@ -26,3 +26,4 @@ HOST sshname
 
 > 来源：  
 > https://segmentfault.com/q/1010000002445731
+
