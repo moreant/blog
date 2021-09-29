@@ -1,8 +1,8 @@
 ---
-title: "Vite 项目启动 esbuild 异常"
+title: "ssh自动登录"
 date: 2021-08-30T01:23:15+08:00
 slug: "ssh-auto-login"
-description: "ssh自动登录"
+description: "只需要 ssh name 就登录了"
 image: ssh-logo.jpg
 tags: 
     - linux
@@ -23,3 +23,6 @@ HOST sshname
 ```
 
 之后就可以用 ssh sshname 登录了
+
+> 来源：  
+> https://segmentfault.com/q/1010000002445731
