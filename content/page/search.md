@@ -8,5 +8,5 @@ outputs:
 menu:
     main:
         weight: -60
-        pre: search
+        params.icon: search
 ---

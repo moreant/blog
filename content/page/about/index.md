@@ -11,7 +11,7 @@ lastmod: '2021-07-18'
 menu:
     main: 
         weight: -90
-        pre: user
+        params.icon: user
 ---
 
 🇨🇳 莫泠然  
