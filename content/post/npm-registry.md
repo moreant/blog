@@ -14,11 +14,11 @@ categories:
 ## 淘宝源
 
 1. 本项目使用
-```
+```bash
 npm install --registry=https://registry.npm.taobao.org
 ```
 2. 全局使用
-```
+```bash
 npm config set registry https://registry.npm.taobao.org
 ```
 
@@ -26,10 +26,10 @@ npm config set registry https://registry.npm.taobao.org
 
 ## 官方源
 1. 本项目使用
-```
+```bash
 npm install --registry=https://registry.npmjs.org/
 ```
 2. 全局使用
-```
+```bash
 npm config set registry https://registry.npmjs.org/
 ```

@@ -39,12 +39,12 @@ should fix this issue.
 ![控制台报错](terminal-error.png)
   
 ## 解决方法
-执行以下指令来手动安装 `esbuild`
-```
+执行以下指令来手动安装 `esbuild`  
+```zsh
 node node_modules/esbuild/install.js
 ```
 
-然后就可以正常启动 Vite 项目了
+然后就可以正常启动 Vite 项目了  
 
 ## 参考资料
 > [1. vite安装vue项目报错（Error: esbuild: Failed to install correctly）](https://blog.csdn.net/m0_37682004/article/details/115001613)  

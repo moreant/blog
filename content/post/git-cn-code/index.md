@@ -9,7 +9,7 @@ image: p1.png
 ## 1. git log 乱码
 `git log` 出现乱码，直接更新到最新版本即可，打开 Git Bash 输入以下内容更新。  
 
-```
+```bash
 git update-git-for-windows
 ```
 

@@ -10,8 +10,9 @@ categories:
 ---
 
 <img src="not-open.png" style="margin:0 auto;width:400px;display:block" />
-网络下载应用被 Apple 添加隔离标识，终端输入命令解除即可：
-```
+网络下载应用被 Apple 添加隔离标识，终端输入命令解除即可：  
+
+```zsh
 sudo xattr -r -d com.apple.quarantine /Applications/Clash\ for\ Windows.app
 ```
 
