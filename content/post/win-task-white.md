@@ -4,7 +4,7 @@ date: 2021-11-13T09:23:15+08:00
 slug: "win-task-white"
 description: "win+R 输入 ie4uinit.exe -show 清除图标缓存"
 categories:
-    - other
+    - windows
 ---
 
 
