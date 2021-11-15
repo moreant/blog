@@ -10,11 +10,17 @@ categories:
     - dev
 ---
 
- ~/.ssh 到ssh目录 如果没有就新建一个
-ssh-keygen -f keyname 生成指定的文件名 keyname
-ssh-copy-id -i keyname.pub root@hostname 把公钥文件拷贝到指定的服务器
-在.ssh/config 配置文件中加上连接配置即可
+ ~/.ssh 到ssh目录 如果没有就新建一个  
+生成指定的文件名 keyname  
+```bash
+ssh-keygen -f keyname
+```
+把公钥文件拷贝到指定的服务器  
+```bash
+ssh-copy-id -i keyname.pub root@hostname 
+``` 
 
+在.ssh/config 配置文件中加上连接配置即可  
 ```
 HOST sshname
     HostName hostname
