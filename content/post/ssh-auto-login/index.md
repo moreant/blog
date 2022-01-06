@@ -10,8 +10,12 @@ categories:
     - dev
 ---
 
- ~/.ssh 到ssh目录 如果没有就新建一个  
-生成指定的文件名 keyname  
+切换到 .ssh 目录如果没有就新建一个  
+```bash
+cd ~/.ssh 
+```
+
+生成 ssh key， -f 可以指定生成具体名称的 ssh key，
 ```bash
 ssh-keygen -f keyname
 ```
@@ -20,7 +24,7 @@ ssh-keygen -f keyname
 ssh-copy-id -i keyname.pub root@hostname 
 ``` 
 
-在.ssh/config 配置文件中加上连接配置即可  
+在.ssh/config 配置文件中加上连接配置即可，如果是使用 id_rsa.pub 的话无需设置 IdentityFile。  
 ```
 HOST sshname
     HostName hostname
