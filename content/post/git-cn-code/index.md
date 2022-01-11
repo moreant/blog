@@ -21,7 +21,7 @@ git bash 输入中文之后删除的话会出现异常，如下
 
 解决办法如下，在 bash 中执行以下指令编辑 ~/.bashrc 文件
 ```bash
-touch ~/.bashr
+touch ~/.bashrc
 ```
 粘贴以下内容
 ```bash
