@@ -10,6 +10,10 @@ categories:
 ---
 
 鉴于网上内容大部分过于啰嗦，故自己记录一下  
+## 查看当前源
+```bash
+npm config get registry
+```
 
 ## 淘宝源
 
