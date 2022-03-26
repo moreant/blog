@@ -30,3 +30,12 @@ export LC_ALL=zh_CN.UTF-8
 按 `Esc` 键退出编辑模式，按 `:` 键盘进入指令模式，输入 `x` 回车，保存并退出。  
 
 重启 git bash 即可正常输入中文。
+
+## 3. git status 中文乱码
+
+![](git-status-cn.png)
+
+```bash
+git config --global core.quotepath false
+```
+
