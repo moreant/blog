@@ -2,9 +2,9 @@ name: Deploy Hugo # 任君喜欢
 
 on:
   push:
-    branches:
+    #branches:
       # 改用 cloudflare pages, 不需要触发 action 了
-      - master # master 更新触发
+      #- master # master 更新触发
 
 jobs:
   build-deploy:
