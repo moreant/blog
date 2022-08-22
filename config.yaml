@@ -90,16 +90,19 @@ params:
                 admin: Admin
 
     widgets:
-        enabled:
-            - search
-            - archives
-            - tag-cloud
-
-        archives:
-            limit: 5
-
-        tagCloud:
-            limit: 10
+        homepage:
+            - type: search
+            - type: archives
+              params:
+                  limit: 5
+            - type: categories
+              params:
+                  limit: 10
+            - type: tag-cloud
+              params:
+                  limit: 10
+        page:
+            - type: toc
 
     opengraph:
         twitter:
@@ -170,3 +173,9 @@ markup:
         startLevel: 2
     highlight:
         noClasses: false
+        codeFences: true
+        guessSyntax: true
+        lineNoStart: 1
+        lineNos: true
+        lineNumbersInTable: true
+        tabWidth: 4
