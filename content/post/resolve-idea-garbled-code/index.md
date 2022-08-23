@@ -7,6 +7,7 @@ image: idea-jvm-build-chinese-garbled-code.png
 tags: 
     - java
     - IDEA 
+    - config
 categories:
     - dev
 ---
