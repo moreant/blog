@@ -3,6 +3,7 @@ title: '极空间安装 Home Assistant 并集成米家与 HomeKit'
 date: 2022-09-03T16:18:39+08:00
 slug: 'home-assistant'
 description: '全 UI 操作，非常简单。实现 HomeKit 控制米家设备！'
+image: mijia.jpeg
 tags:
   - nas
   - hoomeAssistant 
@@ -10,6 +11,9 @@ tags:
 categories:
   - other
 ---
+
+集成之后可以在控制中心中直接控制灯类与开关类电器，无需再打开米家 App。  
+可以先浏览最底部的参考资料的视频，大致了解一下整个集成的难度再来决定是否入这个坑。
 
 ## 开启 Docker 服务 与下载镜像
 首先开启极空间中的 `Docker` 服务。
