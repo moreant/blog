@@ -2,7 +2,7 @@
 title: "Npm 换源"
 slug: "npm-registry"
 date: 2021-08-14T01:53:02+08:00
-description: 不啰嗦 npm config set registry https://registry.npm.taobao.org
+description: 不啰嗦 npm config set registry https://registry.npmmirror.com
 tags: 
     - javascript
 categories:
@@ -19,11 +19,11 @@ npm config get registry
 
 1. 本项目使用
 ```bash
-npm install --registry=https://registry.npm.taobao.org
+npm install --registry=https://registry.npmmirror.com
 ```
 2. 全局使用
 ```bash
-npm config set registry https://registry.npm.taobao.org
+npm config set registry https://registry.npmmirror.com
 ```
 
 <br><br>
