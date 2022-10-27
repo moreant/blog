@@ -29,6 +29,6 @@ categories:
 2. And then select Shorten command line
 3. Select JAR manifest option, apply & run
 
-![](store.tptp.net/md/2022/10/1f6d1128de0e86b4f856ec7ece111bb0.png)
+![](http://store.tptp.net/md/2022/10/1f6d1128de0e86b4f856ec7ece111bb0.png)
 
 原帖地址： https://stackoverflow.com/a/69349044/13621750
