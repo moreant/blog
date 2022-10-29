@@ -8,7 +8,7 @@ tags:
     - IDEA 
     - config
 categories:
-    - dev
+    - memory
 ---
 
 备忘一下

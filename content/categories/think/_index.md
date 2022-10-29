@@ -1,8 +1,8 @@
 ---
-title: "随想"
-description: "随便想想"
+title: "随性畅谈"
+description: "随意吐槽，生活感叹"
 slug: "think"
 style:
-    background: "#EC4899"
+    background: "#ef4444"
     color: "#fff"
 ---

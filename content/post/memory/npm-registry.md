@@ -6,7 +6,7 @@ description: 不啰嗦 npm config set registry https://registry.npmmirror.com
 tags: 
     - javascript
 categories:
-    - dev
+    - memory 
 ---
 
 鉴于网上内容大部分过于啰嗦，故自己记录一下  

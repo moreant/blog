@@ -9,7 +9,7 @@ tags:
   - hoomeAssistant 
   - config
 categories:
-  - other
+  - memory
 ---
 
 集成之后可以在控制中心中直接控制灯类与开关类电器，无需再打开米家 App。  

@@ -5,7 +5,7 @@ slug: "win-remote-credssp"
 image: error-img.png
 description: "gpedit.msc->加密数据库修正->易用攻击"
 categories:
-    - windows
+    - dev
 ---
 
 ## 1. 打开策略控制台

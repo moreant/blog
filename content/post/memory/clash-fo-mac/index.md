@@ -6,7 +6,7 @@ description: sudo xattr -r -d com.apple.quarantine /Applications/Clash\ for\ Win
 tags: 
     - mac
 categories:
-    - other
+    - memory
 ---
 
 <img src="not-open.png" style="margin:0 auto;width:400px;display:block" />

@@ -1,9 +1,8 @@
 ---
 title: "开发填坑"
-description: "工程师就是来解决问题的"
+description: "道阻且长，下次遇到能快速解决"
 slug: "dev"
-image: "available-skills-coding-logo.png"
 style:
-    background: "#3B82F6"
+    background: "#10b981"
     color: "#fff"
 ---
