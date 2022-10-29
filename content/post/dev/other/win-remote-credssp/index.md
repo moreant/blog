@@ -1,5 +1,5 @@
 ---
-title: "Windows 远程时提示CredSSP 加密数据库修正。"
+title: "Windows 远程时提示 CredSSP 加密数据库修正。"
 date: 2021-11-13T10:30:15+08:00
 slug: "win-remote-credssp"
 image: error-img.png
@@ -15,6 +15,7 @@ gpedit.msc
 ```
 
 打开：计算机设置->管理模板->系统->凭据分配->加密数据库修正  
+
 ![](setting-postiton.png)
 
 修改为：已启用->易受攻击  
