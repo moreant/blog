@@ -3,7 +3,7 @@ title: "Vite 项目启动 esbuild 异常"
 date: 2021-08-30T01:23:15+08:00
 slug: "vite-strat-esbuild-install-error"
 description: "throw new Error(`esbuild: Failed to install correctly"
-image: terminal-error.png
+image: terminal-error.webp
 tags: 
     - javascript
     - M1-Question
@@ -36,7 +36,7 @@ corrupted your package-lock.json file. Regenerating your package-lock.json file
 should fix this issue.
 ```
 
-![控制台报错](terminal-error.png)
+![控制台报错](terminal-error.webp)
   
 ## 解决方法
 执行以下指令来手动安装 `esbuild`  

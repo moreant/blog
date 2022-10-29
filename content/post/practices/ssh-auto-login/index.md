@@ -3,7 +3,7 @@ title: 'ssh 自动登录（使用 IdentityFile）'
 date: '2021-09-29T23:09:11+08:00'
 slug: 'ssh-auto-login'
 description: '只需要 ssh name 就登录了'
-image: ssh.jpg
+image: ssh.webp
 tags:
   - linux
 categories:

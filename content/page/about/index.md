@@ -27,12 +27,6 @@ menu:
 
 日常爱好看屏幕使用时间即可
 
-<!-- <div style="display:flex">
-  <img src="mac-time.jpeg">
-  <img src="ipad-time.jpeg">
-  <img src="iphone-time.jpeg">
-</div> -->
-  
-![](mac-time.jpeg)
-![](ipad-time.jpeg)
-![](iphone-time.jpeg)
+![](mac-time.webp)
+![](ipad-time.webp)
+![](iphone-time.webp)

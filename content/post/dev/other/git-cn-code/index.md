@@ -2,7 +2,7 @@
 title: "解决 Git Bash 中文乱码"
 date: 2021-11-07T23:06:06+08:00
 slug: "git-cn-code"
-image: p1.png
+image: p1.webp
 ---
 
 
@@ -17,7 +17,7 @@ git update-git-for-windows
 ## 2. git bash 中文输入异常  
 
 git bash 输入中文之后删除的话会出现异常，如下  
-![](p1.png)
+![](p1.webp)
 
 解决办法如下，在 bash 中执行以下指令编辑 ~/.bashrc 文件
 ```bash

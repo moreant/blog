@@ -11,7 +11,7 @@ categories:
     - dev
 ---
 ## 问题描述
-![控制台报错](terminal-error.png)
+![控制台报错](terminal-error.webp)
 
 ## 解决方法
 需要先执行以下指令再进行安装  
