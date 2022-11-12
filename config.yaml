@@ -148,7 +148,6 @@ menu:
           url: /index.xml
           weight: -10
           params:
-          params:
             ### For demonstration purpose, the home link will be open in a new tab
             newTab: true
             icon: rss
