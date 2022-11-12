@@ -140,16 +140,18 @@ menu:
           name: Home
           url: /
           weight: -100
-          params.icon: home
+          params:
+            icon: home
 
         - identifier: rss
           name: RSS
           url: /index.xml
           weight: -10
-          params.icon: rss
+          params:
           params:
             ### For demonstration purpose, the home link will be open in a new tab
             newTab: true
+            icon: rss
 
 
 related:
