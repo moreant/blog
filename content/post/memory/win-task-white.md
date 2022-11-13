@@ -5,10 +5,16 @@ slug: "win-task-white"
 description: "win+R 输入 ie4uinit.exe -show 清除图标缓存"
 categories:
     - memory
+tags:  
+    - windows    
 ---
 
 
 如描述
+
+```
+ie4uinit.exe -show
+```
 
 > 来源  
 > https://www.365jz.com/article/24741
