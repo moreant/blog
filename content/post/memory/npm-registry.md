@@ -4,7 +4,7 @@ slug: "npm-registry"
 date: 2021-08-14T01:53:02+08:00
 description: 不啰嗦 npm config set registry https://registry.npmmirror.com
 tags: 
-    - javascript
+    - JavaScript
 categories:
     - memory 
 ---

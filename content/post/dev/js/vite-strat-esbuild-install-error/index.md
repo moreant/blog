@@ -5,8 +5,8 @@ slug: "vite-strat-esbuild-install-error"
 description: "throw new Error(`esbuild: Failed to install correctly"
 image: terminal-error.webp
 tags: 
-    - javascript
-    - M1-Question
+    - JavaScript
+    - Mac
 categories:
     - dev
 ---

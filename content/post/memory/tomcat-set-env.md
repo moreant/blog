@@ -4,7 +4,7 @@ slug: "tomcat-set-env"
 date: 2022-04-25T10:17:22+08:00
 description: 妈妈再也不用担心我每次都要改配置文件了
 tags: 
-    - java
+    - Java
 categories:
     - memory
 ---

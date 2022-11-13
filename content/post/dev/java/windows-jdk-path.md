@@ -4,7 +4,7 @@ slug: "windows-jdk-path"
 date: 2022-04-25T10:18:22+08:00
 description: Windows 真麻烦
 tags: 
-    - java
+    - Java
 categories:
     - dev
 ---

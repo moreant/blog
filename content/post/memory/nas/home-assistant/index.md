@@ -5,9 +5,9 @@ slug: 'home-assistant'
 description: '全 UI 操作，非常简单。实现 HomeKit 控制米家设备！'
 image: mijia.webp
 tags:
-  - nas
-  - hoomeAssistant
-  - config
+  - Nas
+  - HoomeAssistant
+  - Config
 categories:
   - memory
 ---

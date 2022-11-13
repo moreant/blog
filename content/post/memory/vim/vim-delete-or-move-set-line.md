@@ -4,7 +4,7 @@ date: 2022-11-13T16:45:20+08:00
 slug: 'vim-delete-or-move-set-line'
 description: '5,10d'
 tags:
-  - vim
+  - Vim
 categories:
   - memory
 ---

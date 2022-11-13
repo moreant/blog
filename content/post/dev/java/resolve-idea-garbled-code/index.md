@@ -5,9 +5,9 @@ slug: 'resolve-idea-jvm-build-chinese-garbled-code'
 description: ''
 image: idea-jvm-build-chinese-garbled-code.webp
 tags:
-  - java
+  - Java
   - IDEA
-  - config
+  - Config
 categories:
   - dev
 ---

@@ -6,7 +6,7 @@ description: "win+R 输入 ie4uinit.exe -show 清除图标缓存"
 categories:
     - memory
 tags:  
-    - windows    
+    - Windows    
 ---
 
 

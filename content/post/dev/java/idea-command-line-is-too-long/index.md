@@ -4,7 +4,7 @@ slug: "idea-command-line-is-too-long"
 date: 2021-07-15T10:10:00+08:00
 description: 推荐使用 JAR 的方法
 tags: 
-    - java
+    - Java
 categories:
     - dev
 ---

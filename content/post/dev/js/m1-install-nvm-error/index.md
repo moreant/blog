@@ -5,8 +5,8 @@ slug: "m1-install-nvm-error"
 description: "clang: error: no such file or directory: 'CXX=c++'"
 image: terminal-error.png
 tags: 
-    - javascript
-    - M1-Question
+    - JavaScript
+    - Mac
 categories:
     - dev
 ---
