@@ -1,0 +1,11 @@
+:root {
+  --body-background: #fcfcfc;
+}
+
+@media (min-width: 1280px) {
+  .container.extended {
+    max-width: 1212px;
+    --left-sidebar-max-width: 15%;
+    --right-sidebar-max-width: 20%;
+  }
+}
