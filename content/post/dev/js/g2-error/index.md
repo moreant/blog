@@ -15,7 +15,7 @@ G2 + Webpack5 本地开发无问题，打包后无限卡 Loading
 
 Uncaught TypeError: Cannot assign to read only property 'constructor' of object '#\<Group>'
 
-构建时加上 --no-module 解决
+构建时加上 `--no-module` 参数解决
 
 > 参考
 > https://github.com/nklayman/vue-cli-plugin-electron-builder/issues/1089
