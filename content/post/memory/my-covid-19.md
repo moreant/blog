@@ -1,6 +1,6 @@
 ---
 title: '我的新冠'
-date: 2022-12-15t00:02:22+08:00
+date: 2022-12-15T00:02:22+08:00
 slug: 'my-covid-19'
 categories:
   - memory
