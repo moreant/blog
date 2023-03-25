@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>JavaScript on Molingran's blog</title><link>https://blog.molingran.com/tags/javascript/</link><description>Recent content in JavaScript on Molingran's blog</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Sun, 13 Nov 2022 19:02:21 +0800</lastBuildDate><atom:link href="https://blog.molingran.com/tags/javascript/index.xml" rel="self" type="application/rss+xml"/><item><title>g2 报错</title><link>https://blog.molingran.com/p/g2-error/</link><pubDate>Sun, 13 Nov 2022 19:02:21 +0800</pubDate><guid>https://blog.molingran.com/p/g2-error/</guid><description>&lt;img src="https://blog.molingran.com/p/g2-error/g2-err.png" alt="Featured image of post g2 报错" />&lt;p>G2 + Webpack5 本地开发无问题，打包后无限卡 Loading&lt;/p>
+&lt;p>Uncaught TypeError: Cannot assign to read only property &amp;lsquo;constructor&amp;rsquo; of object &amp;lsquo;#&amp;lt;Group&amp;gt;&amp;rsquo;&lt;/p>
+&lt;p>构建时加上 &lt;code>--no-module&lt;/code> 参数解决&lt;/p>
+&lt;blockquote>
+&lt;p>参考 &lt;a class="link" href="https://github.com/nklayman/vue-cli-plugin-electron-builder/issues/1089" target="_blank" rel="noopener"
+>https://github.com/nklayman/vue-cli-plugin-electron-builder/issues/1089&lt;/a>&lt;/p>
+&lt;/blockquote></description></item><item><title>Vite 项目启动 esbuild 异常</title><link>https://blog.molingran.com/p/vite-strat-esbuild-install-error/</link><pubDate>Mon, 30 Aug 2021 01:23:15 +0800</pubDate><guid>https://blog.molingran.com/p/vite-strat-esbuild-install-error/</guid><description>&lt;img src="https://blog.molingran.com/p/vite-strat-esbuild-install-error/terminal-error.webp" alt="Featured image of post Vite 项目启动 esbuild 异常" />&lt;h2 id="问题描述">问题描述&lt;/h2>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;span class="lnt">17
+&lt;/span>&lt;span class="lnt">18
+&lt;/span>&lt;span class="lnt">19
+&lt;/span>&lt;span class="lnt">20
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">➜ frontend git:(master) ✗ npm run dev
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&amp;gt; frontend@0.0.0 dev
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&amp;gt; vite
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">/Users/moreant/work/mpcb/frontend/node_modules/esbuild/bin/esbuild:2
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">throw new Error(`esbuild: Failed to install correctly
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">^
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Error: esbuild: Failed to install correctly
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Make sure you don&amp;#39;t have &amp;#34;ignore-scripts&amp;#34; set to true. You can check this with
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&amp;#34;npm config get ignore-scripts&amp;#34;. If that returns true you can reset it back to
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">false using &amp;#34;npm config set ignore-scripts false&amp;#34; and then reinstall esbuild.
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">If you&amp;#39;re using npm v7, make sure your package-lock.json file contains either
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&amp;#34;lockfileVersion&amp;#34;: 1 or the code &amp;#34;hasInstallScript&amp;#34;: true. If it doesn&amp;#39;t have
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">either of those, then it is likely the case that a known bug in npm v7 has
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">corrupted your package-lock.json file. Regenerating your package-lock.json file
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">should fix this issue.
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>&lt;img src="https://blog.molingran.com/p/vite-strat-esbuild-install-error/terminal-error.webp"
+width="1276"
+height="738"
+srcset="https://blog.molingran.com/p/vite-strat-esbuild-install-error/terminal-error_hua85c7dd1682f774fa08a2c375b2f0ee5_105560_480x0_resize_q75_h2_box_2.webp 480w, https://blog.molingran.com/p/vite-strat-esbuild-install-error/terminal-error_hua85c7dd1682f774fa08a2c375b2f0ee5_105560_1024x0_resize_q75_h2_box_2.webp 1024w"
+loading="lazy"
+alt="控制台报错"
+class="gallery-image"
+data-flex-grow="172"
+data-flex-basis="414px"
+>&lt;/p>
+&lt;h2 id="解决方法">解决方法&lt;/h2>
+&lt;p>执行以下指令来手动安装 &lt;code>esbuild&lt;/code>&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-zsh" data-lang="zsh">&lt;span class="line">&lt;span class="cl">node node_modules/esbuild/install.js
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>然后就可以正常启动 Vite 项目了&lt;/p>
+&lt;h2 id="参考资料">参考资料&lt;/h2>
+&lt;blockquote>
+&lt;p>&lt;a class="link" href="https://blog.csdn.net/m0_37682004/article/details/115001613" target="_blank" rel="noopener"
+>1. vite 安装 vue 项目报错（Error: esbuild: Failed to install correctly）&lt;/a>&lt;br>
+&lt;a class="link" href="https://github.com/evanw/esbuild/issues/462#issuecomment-782833191" target="_blank" rel="noopener"
+>2. Broken install binary on macOS&lt;/a>&lt;/p>
+&lt;/blockquote></description></item><item><title>m1 nvm 安装 node 异常</title><link>https://blog.molingran.com/p/m1-install-nvm-error/</link><pubDate>Fri, 27 Aug 2021 23:51:45 +0800</pubDate><guid>https://blog.molingran.com/p/m1-install-nvm-error/</guid><description>&lt;img src="https://blog.molingran.com/terminal-error.png" alt="Featured image of post m1 nvm 安装 node 异常" />&lt;h2 id="问题描述">问题描述&lt;/h2>
+&lt;p>&lt;img src="https://blog.molingran.com/p/m1-install-nvm-error/terminal-error.webp"
+width="1364"
+height="966"
+srcset="https://blog.molingran.com/p/m1-install-nvm-error/terminal-error_hu113f52ce2629d1d8e9cf38732c5aacf6_163162_480x0_resize_q75_h2_box_2.webp 480w, https://blog.molingran.com/p/m1-install-nvm-error/terminal-error_hu113f52ce2629d1d8e9cf38732c5aacf6_163162_1024x0_resize_q75_h2_box_2.webp 1024w"
+loading="lazy"
+alt="控制台报错"
+class="gallery-image"
+data-flex-grow="141"
+data-flex-basis="338px"
+>&lt;/p>
+&lt;h2 id="解决方法">解决方法&lt;/h2>
+&lt;p>需要先执行以下指令再进行安装&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">arch -x86_64 zsh
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>应该是因为 v14 及以前的版本不支持 arm 版本的处理器，所以需要使用 Rosetta 2 来进行安装。&lt;/p>
+&lt;h2 id="参考资料">参考资料&lt;/h2>
+&lt;blockquote>
+&lt;p>&lt;a class="link" href="https://blog.csdn.net/longgege001/article/details/114067242" target="_blank" rel="noopener"
+>mac M1 nvm 安装问题_CSDN&lt;/a>&lt;br>
+&lt;a class="link" href="https://github.com/nvm-sh/nvm/issues/2350#issuecomment-734132550" target="_blank" rel="noopener"
+>nvm install node fails to install on macOS Big Sur M1 Chip&lt;/a>&lt;/p>
+&lt;/blockquote></description></item><item><title>Npm 换源</title><link>https://blog.molingran.com/p/npm-registry/</link><pubDate>Sat, 14 Aug 2021 01:53:02 +0800</pubDate><guid>https://blog.molingran.com/p/npm-registry/</guid><description>&lt;p>鉴于网上内容大部分过于啰嗦，故自己记录一下&lt;/p>
+&lt;h2 id="查看当前源">查看当前源&lt;/h2>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">npm config get registry
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="淘宝源">淘宝源&lt;/h2>
+&lt;ol>
+&lt;li>本项目使用&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">npm install --registry&lt;span class="o">=&lt;/span>https://registry.npmmirror.com
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;ol start="2">
+&lt;li>全局使用&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">npm config &lt;span class="nb">set&lt;/span> registry https://registry.npmmirror.com
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>&lt;!-- raw HTML omitted -->&lt;!-- raw HTML omitted -->&lt;/p>
+&lt;h2 id="官方源">官方源&lt;/h2>
+&lt;ol>
+&lt;li>本项目使用&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">npm install --registry&lt;span class="o">=&lt;/span>https://registry.npmjs.org/
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;ol start="2">
+&lt;li>全局使用&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">npm config &lt;span class="nb">set&lt;/span> registry https://registry.npmjs.org/
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div></description></item></channel></rss>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>IDEA on Molingran's blog</title><link>https://blog.molingran.com/tags/idea/</link><description>Recent content in IDEA on Molingran's blog</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Mon, 22 Aug 2022 13:12:55 +0800</lastBuildDate><atom:link href="https://blog.molingran.com/tags/idea/index.xml" rel="self" type="application/rss+xml"/><item><title>gradle 中国镜像</title><link>https://blog.molingran.com/p/gradle-china-cdn/</link><pubDate>Mon, 22 Aug 2022 13:12:55 +0800</pubDate><guid>https://blog.molingran.com/p/gradle-china-cdn/</guid><description>&lt;p>备忘一下&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-ini" data-lang="ini">&lt;span class="line">&lt;span class="cl">&lt;span class="na">downloads.gradle-dn.com&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div></description></item><item><title>解决 IDEA JVM 编译中文乱码</title><link>https://blog.molingran.com/p/resolve-idea-jvm-build-chinese-garbled-code/</link><pubDate>Mon, 22 Aug 2022 13:12:55 +0800</pubDate><guid>https://blog.molingran.com/p/resolve-idea-jvm-build-chinese-garbled-code/</guid><description>&lt;img src="https://blog.molingran.com/p/resolve-idea-jvm-build-chinese-garbled-code/idea-jvm-build-chinese-garbled-code.webp" alt="Featured image of post 解决 IDEA JVM 编译中文乱码" />&lt;h2 id="1-打开自定义-vm-配置">1. 打开自定义 VM 配置&lt;/h2>
+&lt;p>Help -&amp;gt; Edit Custom VM Options&amp;hellip;&lt;/p>
+&lt;p>&lt;img src="https://blog.molingran.com/p/resolve-idea-jvm-build-chinese-garbled-code/edit_custom_vm_options.webp"
+width="1292"
+height="845"
+srcset="https://blog.molingran.com/p/resolve-idea-jvm-build-chinese-garbled-code/edit_custom_vm_options_hu74077f6b6b705ce2715063d6761914b8_45334_480x0_resize_q75_h2_box_2.webp 480w, https://blog.molingran.com/p/resolve-idea-jvm-build-chinese-garbled-code/edit_custom_vm_options_hu74077f6b6b705ce2715063d6761914b8_45334_1024x0_resize_q75_h2_box_2.webp 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="152"
+data-flex-basis="366px"
+>&lt;/p>
+&lt;h2 id="2-输入以下内容">2. 输入以下内容&lt;/h2>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-ini" data-lang="ini">&lt;span class="line">&lt;span class="cl">&lt;span class="na">-Dfile.encoding&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">UTF-8&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="3-重启-idea">3. 重启 IDEA&lt;/h2>
+&lt;p>File -&amp;gt; Invalidate Caches&amp;hellip; -&amp;gt; Just restart&lt;/p></description></item></channel></rss>

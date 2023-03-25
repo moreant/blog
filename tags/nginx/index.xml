@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>nginx on Molingran's blog</title><link>https://blog.molingran.com/tags/nginx/</link><description>Recent content in nginx on Molingran's blog</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><atom:link href="https://blog.molingran.com/tags/nginx/index.xml" rel="self" type="application/rss+xml"/><item><title>解决控制台输出 unsafe-eval 错误</title><link>https://blog.molingran.com/p/unsafe-eval/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://blog.molingran.com/p/unsafe-eval/</guid><description>&lt;img src="https://blog.molingran.com/p/unsafe-eval/error_console.jpg" alt="Featured image of post 解决控制台输出 unsafe-eval 错误" />&lt;h2 id="前情提要">前情提要&lt;/h2>
+&lt;p>之前测试环境一直使用的都是用 vue-cli 的 &lt;code>production&lt;/code> 模式构建的，由于需要区分测试和正式环境的配置文件，测试环境就改用 &lt;code>test&lt;/code> 模式来构建了。随后就出现了这个问题。&lt;/p>
+&lt;h2 id="特征描述">特征描述&lt;/h2>
+&lt;ol>
+&lt;li>首屏加载无限 Loading - 推测是有 js 文件没能正常加载&lt;/li>
+&lt;li>控制台报错&lt;br>
+&lt;code>Uncaught EvalError: Refused to evaluate a string as JavaScript because 'unsafe-eval' is not an allowed source of script in the following Content Security Policy directive: &amp;quot;default-src 'self' http: https: ws: wss: data: blob: 'unsafe-inline'&amp;quot;.&lt;/code>&lt;/li>
+&lt;/ol>
+&lt;h2 id="解决思路">解决思路&lt;/h2>
+&lt;p>看报错描述貌似是某个安全策略导致的。&lt;br>
+搜索带有单引号的关键字，确定是因为响应头（Response Header）中的 &lt;code>Content-Security-Policy&lt;/code> 安全规则导致浏览器根据规则阻止了 JS 文件的加载。&lt;/p>
+&lt;p>这个安全规则可以通过 HTML 中的 meta 标签携带，当然更多的是通过 Nginx 统一设置的。测试环境的 Nginx 配置是在 &lt;code>nginxconfig.io&lt;/code> 这个网站生成的，里面的 &lt;code>security.conf&lt;/code> 里有：&lt;/p>
+&lt;p>&lt;code>default-src 'self' http: https: ws: wss: data: blob: 'unsafe-inline'; frame-ancestors 'self';&lt;/code>&lt;/p>
+&lt;p>里面没有配置 &lt;code>'unsafe-eval'&lt;/code> 指令值，所以 JS 函数无法正常加载，导致首屏无限 Loading。&lt;/p>
+&lt;h2 id="解决方案">解决方案&lt;/h2>
+&lt;p>因为这个是测试环境出现的问题，直接注释掉这个响应头配置就行了。&lt;br>
+正式环境的构建文件里没有使用到 eval 函数，自然不会被这个规则阻止。&lt;/p>
+&lt;h2 id="相关参考">相关参考&lt;/h2>
+&lt;blockquote>
+&lt;p>&lt;a class="link" href="https://www.ruanyifeng.com/blog/2016/09/csp.html" target="_blank" rel="noopener"
+>Content Security Policy 入门教程 - 阮一峰的网络日志&lt;/a>&lt;br>
+&lt;a class="link" href="https://www.digitalocean.com/community/tools/nginx?global.app.lang=zhCN" target="_blank" rel="noopener"
+>NGINXConfig | DigitalOcean&lt;/a>&lt;br>
+&lt;a class="link" href="https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Headers/Content-Security-Policy" target="_blank" rel="noopener"
+>Content-Security-Policy - HTTP | MDN&lt;/a>&lt;/p>
+&lt;/blockquote></description></item></channel></rss>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Vue on Molingran's blog</title><link>https://blog.molingran.com/tags/vue/</link><description>Recent content in Vue on Molingran's blog</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Sun, 13 Nov 2022 19:02:21 +0800</lastBuildDate><atom:link href="https://blog.molingran.com/tags/vue/index.xml" rel="self" type="application/rss+xml"/><item><title>g2 报错</title><link>https://blog.molingran.com/p/g2-error/</link><pubDate>Sun, 13 Nov 2022 19:02:21 +0800</pubDate><guid>https://blog.molingran.com/p/g2-error/</guid><description>&lt;img src="https://blog.molingran.com/p/g2-error/g2-err.png" alt="Featured image of post g2 报错" />&lt;p>G2 + Webpack5 本地开发无问题，打包后无限卡 Loading&lt;/p>
+&lt;p>Uncaught TypeError: Cannot assign to read only property &amp;lsquo;constructor&amp;rsquo; of object &amp;lsquo;#&amp;lt;Group&amp;gt;&amp;rsquo;&lt;/p>
+&lt;p>构建时加上 &lt;code>--no-module&lt;/code> 参数解决&lt;/p>
+&lt;blockquote>
+&lt;p>参考 &lt;a class="link" href="https://github.com/nklayman/vue-cli-plugin-electron-builder/issues/1089" target="_blank" rel="noopener"
+>https://github.com/nklayman/vue-cli-plugin-electron-builder/issues/1089&lt;/a>&lt;/p>
+&lt;/blockquote></description></item></channel></rss>

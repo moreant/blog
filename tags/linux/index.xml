@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>linux on Molingran's blog</title><link>https://blog.molingran.com/tags/linux/</link><description>Recent content in linux on Molingran's blog</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Wed, 29 Sep 2021 23:09:11 +0800</lastBuildDate><atom:link href="https://blog.molingran.com/tags/linux/index.xml" rel="self" type="application/rss+xml"/><item><title>ssh 自动登录（使用 IdentityFile）</title><link>https://blog.molingran.com/p/ssh-auto-login/</link><pubDate>Wed, 29 Sep 2021 23:09:11 +0800</pubDate><guid>https://blog.molingran.com/p/ssh-auto-login/</guid><description>&lt;img src="https://blog.molingran.com/p/ssh-auto-login/ssh.webp" alt="Featured image of post ssh 自动登录（使用 IdentityFile）" />&lt;p>&lt;strong>以下指令都是在 Git Bash 中的操作。&lt;/strong>&lt;/p>
+&lt;h2 id="切换到用户文件夹下的-ssh-目录">切换到用户文件夹下的 .ssh 目录。&lt;/h2>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">&lt;span class="nb">cd&lt;/span> ~/.ssh
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>如果没有就使用指令 &lt;code>mkdir ~/.ssh&lt;/code> 新建一个&lt;/p>
+&lt;h2 id="生成-ssh-key">生成 ssh key。&lt;/h2>
+&lt;p>如果你已经生成过 key，可以忽略此步。这将生成名为 &lt;code>id_rsa.pub&lt;/code> 的 &lt;strong>公钥&lt;/strong> 和 &lt;code>id_rsa&lt;/code> 的 &lt;strong>私钥&lt;/strong>。&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">ssh-keygen
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>可以加上 &lt;code>-f keyname&lt;/code> 生成一个名为 &lt;code>keyname&lt;/code> 的 key&lt;/p>
+&lt;h2 id="把公钥文件拷贝到指定的服务器">把公钥文件拷贝到指定的服务器&lt;/h2>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">ssh-copy-id root@hostname
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>可以加上 &lt;code>-i keyname&lt;/code> 指定拷贝到服务器的密钥&lt;/p>
+&lt;h2 id="配置服务器别名">配置服务器别名&lt;/h2>
+&lt;p>这个步骤是可选的，可以省略输入用户名和主机名。&lt;br>
+新建 config 文件。&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">touch ~/.ssh/config
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>文件内填入以下内容，注意缩进！&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-ini" data-lang="ini">&lt;span class="line">&lt;span class="cl">&lt;span class="na">HOST sshname&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="na">HostName hostname&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1">## 如果用户是 root，可以不指定&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="na">user myname&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1">## 如果使用的不是默认的key，需要指定 key 的路径&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="na">IdentityFile ~/.ssh/keyname&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>之后就可以在 Git Bash 中用 &lt;code>ssh sshname&lt;/code> 登录了&lt;/p>
+&lt;blockquote>
+&lt;p>参考资料：&lt;br>
+&lt;a class="link" href="https://segmentfault.com/q/1010000002445731" target="_blank" rel="noopener"
+>https://segmentfault.com/q/1010000002445731&lt;/a>&lt;/p>
+&lt;/blockquote></description></item></channel></rss>

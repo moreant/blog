@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Git on Molingran's blog</title><link>https://blog.molingran.com/tags/git/</link><description>Recent content in Git on Molingran's blog</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Sun, 13 Nov 2022 16:42:20 +0800</lastBuildDate><atom:link href="https://blog.molingran.com/tags/git/index.xml" rel="self" type="application/rss+xml"/><item><title>git 拉取子模块</title><link>https://blog.molingran.com/p/git-pull-submodule/</link><pubDate>Sun, 13 Nov 2022 16:42:20 +0800</pubDate><guid>https://blog.molingran.com/p/git-pull-submodule/</guid><description>&lt;ol>
+&lt;li>首次拉取的时候可以加上 &lt;code>--recursive&lt;/code> 参数&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">git clone --recursive 仓库地址
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;ol start="2">
+&lt;li>如果已经将仓库克隆到本地了，想拉子模块&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">git submodule update --init --recursive
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;ol start="3">
+&lt;li>更新子模块&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">git submodule update --recursive
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div></description></item><item><title>解决 Git Bash 中文乱码</title><link>https://blog.molingran.com/p/git-cn-code/</link><pubDate>Sun, 07 Nov 2021 23:06:06 +0800</pubDate><guid>https://blog.molingran.com/p/git-cn-code/</guid><description>&lt;img src="https://blog.molingran.com/p/git-cn-code/p1.webp" alt="Featured image of post 解决 Git Bash 中文乱码" />&lt;h2 id="1-git-log-乱码">1. git log 乱码&lt;/h2>
+&lt;p>&lt;code>git log&lt;/code> 出现乱码，直接更新到最新版本即可，打开 Git Bash 输入以下内容更新。&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">git update-git-for-windows
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="2-git-bash-中文输入异常">2. git bash 中文输入异常&lt;/h2>
+&lt;p>git bash 输入中文之后删除的话会出现异常，如下&lt;br>
+&lt;img src="https://blog.molingran.com/p/git-cn-code/p1.webp"
+width="612"
+height="237"
+srcset="https://blog.molingran.com/p/git-cn-code/p1_huc96e031db5acbb1ebb68b6bdacdc0dc9_12504_480x0_resize_q75_h2_box_2.webp 480w, https://blog.molingran.com/p/git-cn-code/p1_huc96e031db5acbb1ebb68b6bdacdc0dc9_12504_1024x0_resize_q75_h2_box_2.webp 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="258"
+data-flex-basis="619px"
+>&lt;/p>
+&lt;p>解决办法如下，在 bash 中执行以下指令编辑 ~/.bashrc 文件&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">touch ~/.bashrc
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>粘贴以下内容&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">&lt;span class="nb">export&lt;/span> &lt;span class="nv">LC_ALL&lt;/span>&lt;span class="o">=&lt;/span>zh_CN.UTF-8
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>按 &lt;code>Esc&lt;/code> 键退出编辑模式，按 &lt;code>:&lt;/code> 键盘进入指令模式，输入 &lt;code>x&lt;/code> 回车，保存并退出。&lt;/p>
+&lt;p>重启 git bash 即可正常输入中文。&lt;/p>
+&lt;h2 id="3-git-status-中文乱码">3. git status 中文乱码&lt;/h2>
+&lt;p>&lt;img src="https://blog.molingran.com/git-status-cn.png"
+loading="lazy"
+>&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">git config --global core.quotepath &lt;span class="nb">false&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div></description></item></channel></rss>

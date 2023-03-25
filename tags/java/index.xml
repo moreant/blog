@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Java on Molingran's blog</title><link>https://blog.molingran.com/tags/java/</link><description>Recent content in Java on Molingran's blog</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Mon, 22 Aug 2022 13:12:55 +0800</lastBuildDate><atom:link href="https://blog.molingran.com/tags/java/index.xml" rel="self" type="application/rss+xml"/><item><title>gradle 中国镜像</title><link>https://blog.molingran.com/p/gradle-china-cdn/</link><pubDate>Mon, 22 Aug 2022 13:12:55 +0800</pubDate><guid>https://blog.molingran.com/p/gradle-china-cdn/</guid><description>&lt;p>备忘一下&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-ini" data-lang="ini">&lt;span class="line">&lt;span class="cl">&lt;span class="na">downloads.gradle-dn.com&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div></description></item><item><title>解决 IDEA JVM 编译中文乱码</title><link>https://blog.molingran.com/p/resolve-idea-jvm-build-chinese-garbled-code/</link><pubDate>Mon, 22 Aug 2022 13:12:55 +0800</pubDate><guid>https://blog.molingran.com/p/resolve-idea-jvm-build-chinese-garbled-code/</guid><description>&lt;img src="https://blog.molingran.com/p/resolve-idea-jvm-build-chinese-garbled-code/idea-jvm-build-chinese-garbled-code.webp" alt="Featured image of post 解决 IDEA JVM 编译中文乱码" />&lt;h2 id="1-打开自定义-vm-配置">1. 打开自定义 VM 配置&lt;/h2>
+&lt;p>Help -&amp;gt; Edit Custom VM Options&amp;hellip;&lt;/p>
+&lt;p>&lt;img src="https://blog.molingran.com/p/resolve-idea-jvm-build-chinese-garbled-code/edit_custom_vm_options.webp"
+width="1292"
+height="845"
+srcset="https://blog.molingran.com/p/resolve-idea-jvm-build-chinese-garbled-code/edit_custom_vm_options_hu74077f6b6b705ce2715063d6761914b8_45334_480x0_resize_q75_h2_box_2.webp 480w, https://blog.molingran.com/p/resolve-idea-jvm-build-chinese-garbled-code/edit_custom_vm_options_hu74077f6b6b705ce2715063d6761914b8_45334_1024x0_resize_q75_h2_box_2.webp 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="152"
+data-flex-basis="366px"
+>&lt;/p>
+&lt;h2 id="2-输入以下内容">2. 输入以下内容&lt;/h2>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-ini" data-lang="ini">&lt;span class="line">&lt;span class="cl">&lt;span class="na">-Dfile.encoding&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">UTF-8&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="3-重启-idea">3. 重启 IDEA&lt;/h2>
+&lt;p>File -&amp;gt; Invalidate Caches&amp;hellip; -&amp;gt; Just restart&lt;/p></description></item><item><title>Windows JDK 环境变量配置</title><link>https://blog.molingran.com/p/windows-jdk-path/</link><pubDate>Mon, 25 Apr 2022 10:18:22 +0800</pubDate><guid>https://blog.molingran.com/p/windows-jdk-path/</guid><description>&lt;p>系统变量新建 JAVA_HOME,值是 jdk 路径&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">C:\java-se-8u41-ri
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>Path 加上，如果上一个没分号就加上分号。如果是 Windows10 就不用带分号，写两条。&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">%JAVA_HOME%\bin;%JAVA_HOME%\jre\bin;
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div></description></item><item><title>Tomcat 设置环境变量</title><link>https://blog.molingran.com/p/tomcat-set-env/</link><pubDate>Mon, 25 Apr 2022 10:17:22 +0800</pubDate><guid>https://blog.molingran.com/p/tomcat-set-env/</guid><description>&lt;p>在 tomcat 的 bin 目录下新建 setenv 文件， Linux 系统用 sh, Windows 系统用 bat&lt;/p>
+&lt;p>setenv.sh&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-ini" data-lang="ini">&lt;span class="line">&lt;span class="cl">&lt;span class="na">JAVA_OPTS&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;$JAVA_OPTS -Dspring.profiles.active=dev -Dfile.encoding=UTF-8&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>setenv.bat&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-ini" data-lang="ini">&lt;span class="line">&lt;span class="cl">&lt;span class="na">set &amp;#34;JAVA_OPTS&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">%JAVA_OPTS% -Dfile.encoding=UTF-8 -Dlog4j2.formatMsgNoLookups=true -Dspring.profiles.active=dev&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div></description></item><item><title>IDEA 项目启动报错 Command line is too long</title><link>https://blog.molingran.com/p/idea-command-line-is-too-long/</link><pubDate>Thu, 15 Jul 2021 10:10:00 +0800</pubDate><guid>https://blog.molingran.com/p/idea-command-line-is-too-long/</guid><description>&lt;h2 id="直接修改配置文件的方法">直接修改配置文件的方法&lt;/h2>
+&lt;p>在项目的 .idea/workspace.xml 文件中，找到&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-xml" data-lang="xml">&lt;span class="line">&lt;span class="cl">&lt;span class="nt">&amp;lt;component&lt;/span> &lt;span class="na">name=&lt;/span>&lt;span class="s">&amp;#34;PropertiesComponent&amp;#34;&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>下面添加一行&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-xml" data-lang="xml">&lt;span class="line">&lt;span class="cl">&lt;span class="nt">&amp;lt;property&lt;/span> &lt;span class="na">name=&lt;/span>&lt;span class="s">&amp;#34;dynamic.classpath&amp;#34;&lt;/span> &lt;span class="na">value=&lt;/span>&lt;span class="s">&amp;#34;true&amp;#34;&lt;/span> &lt;span class="nt">/&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="jar-的方法-推荐">JAR 的方法 （推荐）&lt;/h2>
+&lt;p>最近又发现了一个新的办法，不需要记命令。具体方法如下&lt;/p>
+&lt;ol>
+&lt;li>On the edit configuration menu, click on modify options&lt;/li>
+&lt;li>And then select Shorten command line&lt;/li>
+&lt;li>Select JAR manifest option, apply &amp;amp; run&lt;/li>
+&lt;/ol>
+&lt;p>&lt;img src="https://blog.molingran.com/p/idea-command-line-is-too-long/setting.webp"
+width="2978"
+height="1692"
+srcset="https://blog.molingran.com/p/idea-command-line-is-too-long/setting_hu1bdef9316131d9529aa38d0c2ff39587_91186_480x0_resize_q75_h2_box_2.webp 480w, https://blog.molingran.com/p/idea-command-line-is-too-long/setting_hu1bdef9316131d9529aa38d0c2ff39587_91186_1024x0_resize_q75_h2_box_2.webp 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="176"
+data-flex-basis="422px"
+>&lt;/p>
+&lt;p>原帖地址： &lt;a class="link" href="https://stackoverflow.com/a/69349044/13621750" target="_blank" rel="noopener"
+>https://stackoverflow.com/a/69349044/13621750&lt;/a>&lt;/p></description></item></channel></rss>
