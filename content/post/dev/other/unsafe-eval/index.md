@@ -1,6 +1,6 @@
 ---
 title: '解决控制台输出 unsafe-eval 错误'
-date: 2022-11-14t23:48:22+08:00
+date: 2022-11-14T23:48:22+08:00
 slug: 'unsafe-eval'
 image: error_console.jpg
 categories:

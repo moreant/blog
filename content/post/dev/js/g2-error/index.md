@@ -1,5 +1,5 @@
 ---
-title: 'g2 报错'
+title: 'And Design Vue g2 报错'
 date: 2022-11-13T19:02:21+08:00
 slug: 'g2-error'
 description: '--no-module'
