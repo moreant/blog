@@ -1,7 +1,7 @@
 ---
-title: 'ssh 自动登录（使用 IdentityFile）'
+title: '基于 IdentityFile 实现自动登陆 ssh'
 date: '2021-09-29T23:09:11+08:00'
-slug: 'ssh-auto-login'
+slug: 'automatic-ssh-login-based-on-identityfile'
 description: '只需要 ssh name 就登录了'
 image: ssh.webp
 tags:

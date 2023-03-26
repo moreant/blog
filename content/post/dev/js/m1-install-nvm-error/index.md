@@ -1,7 +1,7 @@
 ---
-title: 'm1 nvm 安装 node 异常'
+title: '修复Mac M1 Nvm 安装 Nodejs 异常'
 date: 2021-08-27T23:51:45+08:00
-slug: 'm1-install-nvm-error'
+slug: 'fix-mac-m1-nvm-nodejs-installation-exception'
 description: "clang: error: no such file or directory: 'CXX=c++'"
 image: terminal-error.png
 tags:

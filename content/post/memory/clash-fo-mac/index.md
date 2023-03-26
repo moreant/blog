@@ -1,7 +1,7 @@
 ---
-title: 'Clash for Windows 在 macOS 安装后无法打开，提示损坏'
+title: '修复 Clash for Windows 在 macOS 安装后无法打开，提示损坏'
 date: 2021-08-14T04:02:21+08:00
-slug: 'clash-fo-mac'
+slug: 'fix-cfw-cannot-be-opened'
 description: sudo xattr -r -d com.apple.quarantine /Applications/Clash\ for\ Windows.app
 image: not-open.webp
 tags:

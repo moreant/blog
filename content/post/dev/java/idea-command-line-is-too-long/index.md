@@ -1,6 +1,6 @@
 ---
 title: 'IDEA 项目启动报错 Command line is too long'
-slug: 'idea-command-line-is-too-long'
+slug: 'fix-idea-project-startup-error-command-line-is-too-long'
 date: 2021-07-15T10:10:00+08:00
 description: 推荐使用 JAR 的方法
 tags:

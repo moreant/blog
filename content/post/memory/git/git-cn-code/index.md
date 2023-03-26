@@ -1,7 +1,7 @@
 ---
 title: '解决 Git Bash 中文乱码'
 date: 2021-11-07T23:06:06+08:00
-slug: 'git-cn-code'
+slug: 'fix-chinese-character-gibberish-in-git-bash'
 image: p1.webp
 categories:
   - memory
