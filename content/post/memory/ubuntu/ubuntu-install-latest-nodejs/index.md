@@ -1,6 +1,6 @@
 ---
 title: 'Ubuntu 安装最新版 nodejs'
-date: 2023-03-26T13:40:14+08:00
+date: 2023-02-01T13:40:14+08:00
 slug: 'ubuntu-install-latest-nodejs'
 image: ubuntu-install-latest-nodejs.webp
 categories:
