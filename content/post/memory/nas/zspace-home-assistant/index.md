@@ -1,7 +1,7 @@
 ---
 title: '极空间安装 Home Assistant 并集成米家与 HomeKit'
 date: 2022-09-03T16:18:39+08:00
-slug: 'home-assistant'
+slug: 'zspace-home-assistant'
 description: '全 UI 操作，非常简单。实现 HomeKit 控制米家设备！'
 image: mijia.webp
 tags:

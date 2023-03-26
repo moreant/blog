@@ -1,10 +1,9 @@
 ---
-title: 'Tag'
-slug: 'tag'
-layout: 'tag'
+title: 'Tags'
+slug: 'tags'
 menu:
   main:
-    weight: 3
+    weight: 4
     params:
       icon: tag
 ---

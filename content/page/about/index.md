@@ -1,16 +1,12 @@
 ---
-title: About
+title: 'About'
 description: 夫列子御风而行，泠然善也
+slug: 'about'
 date: '2021-07-18'
-aliases:
-  - about-us
-  - about-hugo
-  - contact
-license: CC BY-NC-ND
 lastmod: '2021-07-18'
 menu:
   main:
-    weight: -90
+    weight: 2
     params:
       icon: user
 ---

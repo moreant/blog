@@ -5,7 +5,7 @@ slug: 'ssh-auto-login'
 description: '只需要 ssh name 就登录了'
 image: ssh.webp
 tags:
-  - linux
+  - Linux
 categories:
   - practices
 ---

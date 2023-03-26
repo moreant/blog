@@ -6,7 +6,7 @@ image: error_console.jpg
 categories:
   - dev
 tags:
-  - nginx
+  - Nginx
 ---
 
 ## 前情提要
