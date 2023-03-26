@@ -11,8 +11,28 @@ categories:
   - memory
 ---
 
-备忘一下
+因为众所周知的原因，在中国下载 Gradle 比较慢。因此可以使用国内镜像源的地址下载，各个下载源的信息如下：
 
-```ini
-downloads.gradle-dn.com
+官方：
+
+```
+https://services.gradle.org/distributions
+```
+
+官方加速：
+
+```
+https://downloads.gradle-dn.com/distributions
+```
+
+阿里云：
+
+```
+https://mirrors.aliyun.com/gradle
+```
+
+腾讯云：
+
+```
+https://mirrors.cloud.tencent.com/gradle
 ```
