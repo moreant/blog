@@ -18,7 +18,7 @@ subtitle = "学习即输入输出"
 [sidebar.avatar]
 enabled = true
 local = false
-src = "https://thirdwx.qlogo.cn/mmopen/vi_32/8yYGmv0Vme0ZCyNvvDDSxd5PibzIywKVazQmpibibTWY126GaVaVpFEg0MBd9HLXP0wYOUY4Q49oAZwVENX6Tg1Ow/132"
+src = "https://seccdn.libravatar.org/gravatarproxy/190b63f619f6d76a0087fa4eeb7f0d35?s=120"
 
 [article]
 math = false
