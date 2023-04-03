@@ -25,6 +25,12 @@ https://services.gradle.org/distributions
 https://downloads.gradle-dn.com/distributions
 ```
 
+华为云（当前最快）：
+
+```
+https://mirrors.huaweicloud.com/gradle
+```
+
 阿里云：
 
 ```
