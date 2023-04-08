@@ -10,6 +10,10 @@ links:
     description: 我不是大佬，只是在追寻大佬的脚步
     website: https://adunm.top/
     image: https://q1.qlogo.cn/g?b=qq&nk=3572066061&s=5
+  - title: 三叶博客
+    description: 表达，分享，传播。
+    website: https://www.3jo.cn/
+    image: https://www.3jo.cn/usr/themes/jasmine/logo1.png
 menu:
   main:
     name: links
