@@ -4,6 +4,7 @@ description: 死得好
 date: 2021-07-15T23:09:48+08:00
 slug: 'the-elephant-is-dead'
 image: under-the-dome.webp
+draft: true
 categories:
   - think
 ---

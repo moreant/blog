@@ -3,8 +3,9 @@ title: '我的新冠'
 date: 2022-12-15T00:02:22+08:00
 slug: 'my-covid-19'
 image: my-covid-19.webp
+draft: true
 categories:
-  - memory
+  - think
 ---
 
 ## T-2 周日

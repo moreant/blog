@@ -57,4 +57,10 @@ node -v
 ```
 
 建议顺手开启包管理配置
+```bash
+corepack enable
+```
 
+
+> 参考资料  
+> https://askubuntu.com/a/83290/1579719
