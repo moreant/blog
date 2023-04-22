@@ -17,7 +17,7 @@ tags:
 INSTALL_GRADLE_VERSION=5.6.4
 ```
 
-下载 gradle。如果速度慢，可以参考[这里](/p/gradle-china-cdn/) 替换源
+下载 gradle。如果速度慢，可以参考[这里](https://molingran.com/p/gradle-china-cdn/) 替换源
 ```bash
 wget -P /tmp  https://downloads.gradle-dn.com/distributions/gradle-$INSTALL_GRADLE_VERSION-bin.zip
 ```
@@ -47,6 +47,7 @@ sudo vim /etc/profile.d/gradle.sh
 # /etc/profile.d/gradle.sh
 export GRADLE_HOME=/opt/gradle/latest
 export PATH=${GRADLE_HOME}/bin:${PATH}
+
 ```
 
 将 `gradle.sh` 文件设置为可执行

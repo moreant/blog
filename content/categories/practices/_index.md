@@ -3,6 +3,6 @@ title: '最佳实践'
 description: '实践是检验真理的唯一标准'
 slug: 'practices'
 style:
-  background: '#ef4444'
+  background: '#D03050FF'
   color: '#fff'
 ---
