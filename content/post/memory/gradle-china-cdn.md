@@ -1,12 +1,12 @@
 ---
-title: 'gradle 中国镜像'
+title: 'Gradle 中国镜像'
 date: 2022-08-22T13:12:55+08:00
 slug: 'gradle-china-cdn'
 description: 'downloads.gradle-dn.com'
 tags:
   - Java
-  - IDEA
   - Config
+  - Gradle
 categories:
   - memory
 ---

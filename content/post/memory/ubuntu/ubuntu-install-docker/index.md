@@ -5,7 +5,7 @@ slug: 'ubuntu-install-docker'
 image: ubuntu-install-docker.webp
 categories:
   - memory
-tag:
+tags:
   - Linux
   - Ubuntu
   - Docker

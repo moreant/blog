@@ -5,7 +5,7 @@ slug: 'ubuntu-install-latest-nodejs'
 image: ubuntu-install-latest-nodejs.webp
 categories:
   - memory
-tag:
+tags:
   - Ubuntu
   - Nodejs
 ---
