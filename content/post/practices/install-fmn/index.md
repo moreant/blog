@@ -40,6 +40,16 @@ scoop install fnm
 eval "$(fnm env --use-on-cd)"
 ```
 
+在后续的使用发现，如果是 Windows 系统，在使用全局安装的包时，可能会出现 `MODULE_NOT_FOUND` 的错误，参考 [Git Bash issues with CLI tools](https://github.com/Schniz/fnm/issues/390#issuecomment-776240883) 的解决方案，继续在 `~/.bashrc` 文件中添加以下内容
+```bash
+eval $(fnm env | sed 1d)
+export PATH=$(cygpath $FNM_MULTISHELL_PATH):$PATH
+
+if [[ -f .node-version || -f .nvmrc ]]; then
+    fnm use
+fi
+```
+
 ### zsh
 在 zsh 的配置文件 `~/.zshrc` 中添加以下内容
 ```bash
