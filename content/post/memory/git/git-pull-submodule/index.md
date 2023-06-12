@@ -1,5 +1,5 @@
 ---
-title: 'git 拉取子模块'
+title: 'Git 拉取子模块'
 date: 2022-11-13T16:42:20+08:00
 slug: 'git-pull-submodule'
 description: 'git submodule update --init --recursive'
