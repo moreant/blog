@@ -3,6 +3,7 @@ title: 'Git 初始化配置'
 date: '2023-06-12T15:40:00+08:00'
 slug: 'git-init-config'
 description: '最佳实践的 Git 初始化配置推荐'
+image: git-init-config.webp
 tags:
   - Git
 categories:
