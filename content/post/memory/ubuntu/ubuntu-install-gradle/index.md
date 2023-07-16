@@ -19,7 +19,7 @@ INSTALL_GRADLE_VERSION=5.6.4
 
 下载 gradle。如果速度慢，可以参考[这里](https://molingran.com/p/gradle-china-cdn/) 替换源
 ```bash
-wget -P /tmp  https://downloads.gradle-dn.com/distributions/gradle-$INSTALL_GRADLE_VERSION-bin.zip
+wget -P /tmp  https://mirrors.cloud.tencent.com/gradle/gradle-$INSTALL_GRADLE_VERSION-bin.zip
 ```
 
 创建 Gradle 安装目录   
