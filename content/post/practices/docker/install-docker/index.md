@@ -1,13 +1,12 @@
 ---
-title: 'Ubuntu 一键安装 Docker'
+title: '一键安装 Docker'
 date: 2023-03-03T00:02:22+08:00
-slug: 'ubuntu-install-docker'
-image: ubuntu-install-docker.webp
+slug: 'install-docker'
+image: install-docker.webp
 categories:
-  - memory
+  - practices
 tags:
   - Linux
-  - Ubuntu
   - Docker
 ---
 

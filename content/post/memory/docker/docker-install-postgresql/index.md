@@ -8,7 +8,7 @@ tags:
   - Docker
   - PostgreSQL
 categories:
-  - practices
+  - memory
 ---
 
 ## 1. 拉取镜像

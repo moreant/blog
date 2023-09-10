@@ -7,7 +7,7 @@ image: docker-move-volume.webp
 tags:
   - Docker
 categories:
-  - practices
+  - memory
 ---
 
 ## 备份
