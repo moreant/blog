@@ -1,5 +1,5 @@
 ---
-title: 'Docker 安装 PostgreSQL 的最佳实践'
+title: 'Docker 安装 PostgreSQL'
 date: '2023-07-16T16:27:00+08:00'
 slug: 'docker-install-postgresql'
 description: '以 Ubuntu 为例'
