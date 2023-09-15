@@ -14,6 +14,7 @@ categories:
 因为众所周知的原因，在中国下载 Gradle 比较慢。因此可以使用国内镜像源的地址下载，各个下载源的信息如下：
 
 官方：
+目前官方的貌似加上 CDN 了，速度也非常快
 
 ```
 https://services.gradle.org/distributions
@@ -28,7 +29,7 @@ https://downloads.gradle-dn.com/distributions
 
 
 华为云：
-目前地址已失效，不知何时恢复。
+~~目前地址已失效，不知何时恢复。（230915发现已恢复。~~
 
 ```
 https://mirrors.huaweicloud.com/gradle
@@ -41,7 +42,6 @@ https://mirrors.aliyun.com/gradle
 ```
 
 腾讯云：
-虽然速度不快，但是也是为数不多能用的镜像源了。
 ```
 https://mirrors.cloud.tencent.com/gradle
 ```
