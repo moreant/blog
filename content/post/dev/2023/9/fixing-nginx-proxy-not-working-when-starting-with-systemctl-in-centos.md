@@ -2,7 +2,7 @@
 title: '修复 CentOS 中使用 Systemctl 启动 Nginx 无法反代理的问题'
 date: '2023-09-16T23:17:00+08:00'
 slug: 'fixing-nginx-proxy-not-working-when-starting-with-systemctl-in-centos'
-description: '通过 semange 添加端口解决'
+description: '通过 semange 添加反代端口解决'
 tags:
   - Nginx
   - CentOS
@@ -15,7 +15,7 @@ categories:
 
 Google 了一波，发现是 `SELinux` 的配置阻止了 Nginx 代理后端端口，可以通过 `semanage` 添加需要反代的端口解决。
 
-## 解决方法
+## 解决步骤
 ### 1. 安装 semanage
 
 ```bash
@@ -50,7 +50,7 @@ nginx -s reload
 ```
 
 ## 参考资料
-[linux - systemctl启动nginx没有加载nginx.conf配置文件？ - SegmentFault 思否](https://segmentfault.com/q/1010000004361013)  
-[\[Centos7\] 安裝 semanage (selinux工具程式) @新精讚](https://n.sfs.tw/content/index/11039)  
-[nginx - proxy_pass isn't working when SELinux is enabled, why? - Stack Overflow](https://stackoverflow.com/a/39737231)  
-[Modifying SELinux Settings for Full NGINX and NGINX Plus Functionality](https://www.nginx.com/blog/using-nginx-plus-with-selinux/#Issue-3:-NGINX-Cannot-Bind-to-Additional-Ports)  
+> [linux - systemctl启动nginx没有加载nginx.conf配置文件？ - SegmentFault 思否](https://segmentfault.com/q/1010000004361013)  
+> [\[Centos7\] 安裝 semanage (selinux工具程式) @新精讚](https://n.sfs.tw/content/index/11039)  
+> [nginx - proxy_pass isn't working when SELinux is enabled, why? - Stack Overflow](https://stackoverflow.com/a/39737231)  
+> [Modifying SELinux Settings for Full NGINX and NGINX Plus Functionality](https://www.nginx.com/blog/using-nginx-plus-with-selinux/#Issue-3:-NGINX-Cannot-Bind-to-Additional-Ports)  
