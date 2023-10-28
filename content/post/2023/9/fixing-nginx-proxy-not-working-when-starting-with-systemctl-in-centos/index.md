@@ -3,6 +3,7 @@ title: '修复 CentOS 中使用 Systemctl 启动 Nginx 无法反代理的问题'
 date: '2023-09-16T23:17:00+08:00'
 slug: 'fixing-nginx-proxy-not-working-when-starting-with-systemctl-in-centos'
 description: '通过 semange 添加反代端口解决'
+image: fixing-nginx-proxy-not-working-when-starting-with-systemctl-in-centos.webp
 tags:
   - Nginx
   - CentOS

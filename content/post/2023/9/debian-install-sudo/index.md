@@ -3,6 +3,7 @@ title: 'Debian 安装 sudo'
 date: '2023-09-11T00:52:00+08:00'
 slug: 'debian-install-sudo'
 description: '不是很懂为啥 Debian12 居然连 sudo 都没预装'
+image: debian-install-sudo.webp
 tags:
   - Debian
 categories:

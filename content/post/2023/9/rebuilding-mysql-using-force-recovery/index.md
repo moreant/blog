@@ -3,6 +3,7 @@ title: '使用 Force Recovery 重建 MySQL 数据库'
 date: '2023-09-16T23:51:00+08:00'
 slug: 'rebuilding-mysql-using-force-recovery'
 description: '服务器被强制断电这种事情太恐怖了'
+image: rebuilding-mysql-using-force-recovery.webp
 tags:
   - MySQL
 categories:

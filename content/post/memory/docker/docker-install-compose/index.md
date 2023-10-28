@@ -3,6 +3,7 @@ title: 'Docker 安装 Compose'
 date: '2023-09-11T00:08:00+08:00'
 slug: 'docker-install-compose'
 description: '不知道为啥官方文档介绍的这么乱'
+image: docker-install-compose.webp
 tags:
   - Docker
 categories:
