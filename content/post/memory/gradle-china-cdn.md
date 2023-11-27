@@ -15,13 +15,15 @@ categories:
 
 官方：
 目前官方的貌似加上 CDN 了，速度也非常快
+231127: 速度时好时坏
 
 ```
 https://services.gradle.org/distributions
 ```
 
-官方加速：
+~~官方加速：~~
 在国内时好时坏。
+231127: 已经完全不可用了
 
 ```
 https://downloads.gradle-dn.com/distributions
@@ -29,7 +31,8 @@ https://downloads.gradle-dn.com/distributions
 
 
 华为云：
-~~目前地址已失效，不知何时恢复。（230915发现已恢复。~~
+~~目前地址已失效，不知何时恢复。~~
+230915: 已恢复，目前速度最快
 
 ```
 https://mirrors.huaweicloud.com/gradle
