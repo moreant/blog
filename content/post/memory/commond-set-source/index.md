@@ -4,6 +4,7 @@ slug: 'commond-set-source'
 date: 2024-02-26T15:58:00+08:00
 description: 在 Docker 里想要设置源，连个 Vim 都没有，所以只能用命令行设置了。
 tags:
+  - Linux
   - Ubuntu
   - Debian
 categories:
