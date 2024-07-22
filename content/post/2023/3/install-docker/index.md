@@ -10,15 +10,22 @@ tags:
   - Docker
 ---
 
+
+> 240722更新:  
+> 1. 使用镜像源下载安装脚本。
+> 2. 使用清华源替代 install 脚本中的两个镜像源，解决安装速度都拉胯的问题。
+
 ## 一键安装
 
 使用 get-docker 脚本可以快速的安装 Docker ，无论是 x86 还是 ARM 都能支持。
 
 ```bash
+# 使用清华源
+export DOWNLOAD_URL="https://mirrors.tuna.tsinghua.edu.cn/docker-ce"
 # 获取脚本
 curl -fsSL https://mirror.ghproxy.com/https://raw.githubusercontent.com/docker/docker-install/master/install.sh -o install-docker.sh
 # 执行
-sudo sh install-docker.sh --mirror Aliyun
+sudo sh install-docker.sh
 # Executing docker install script, commit: 7cae5f8b0decc17d6571f9f52eb840fbc13b2737
 ```
 
