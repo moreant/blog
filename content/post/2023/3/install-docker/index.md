@@ -16,9 +16,9 @@ tags:
 
 ```bash
 # 获取脚本
-curl -fsSL https://get.docker.com -o get-docker.sh
+curl -fsSL https://mirror.ghproxy.com/https://raw.githubusercontent.com/docker/docker-install/master/install.sh -o install-docker.sh
 # 执行
-sudo sh get-docker.sh
+sudo sh install-docker.sh --mirror Aliyun
 # Executing docker install script, commit: 7cae5f8b0decc17d6571f9f52eb840fbc13b2737
 ```
 
