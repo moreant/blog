@@ -23,7 +23,7 @@ mkdir -p ~/.docker/cli-plugins
 2. 下载二进制文件
 
 ```bash
-curl -L https://ghproxy.com/https://github.com/docker/compose/releases/latest/download/docker-compose-`uname -s`-`uname -m` > ~/.docker/cli-plugins/docker-compose
+curl -L https://mirror.ghproxy.com/https://github.com/docker/compose/releases/latest/download/docker-compose-`uname -s`-`uname -m` > ~/.docker/cli-plugins/docker-compose
 ```
 
 3. 添加可执行权限
