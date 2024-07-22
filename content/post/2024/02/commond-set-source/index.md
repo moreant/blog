@@ -15,17 +15,6 @@ categories:
 可以复制头尾，然后中间的参考清华源的指南进行修改。  
 https://mirrors.tuna.tsinghua.edu.cn/help/ubuntu/
 
-## Ubuntu 22.4
-
-```bash
-tee /etc/apt/sources.list <<-'EOF'
-deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ jammy main restricted universe multiverse
-deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ jammy-updates main restricted universe multiverse
-deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ jammy-backports main restricted universe multiverse
-deb http://security.ubuntu.com/ubuntu/ jammy-security main restricted universe multiverse
-EOF
-```
-
 ## Debian 11
 
 ```bash
@@ -44,5 +33,28 @@ deb https://mirrors.tuna.tsinghua.edu.cn/debian/ bookworm main contrib non-free 
 deb https://mirrors.tuna.tsinghua.edu.cn/debian/ bookworm-updates main contrib non-free non-free-firmware
 deb https://mirrors.tuna.tsinghua.edu.cn/debian/ bookworm-backports main contrib non-free non-free-firmware
 deb https://security.debian.org/debian-security bookworm-security main contrib non-free non-free-firmware
+EOF
+```
+
+## Ubuntu 22.4
+
+```bash
+tee /etc/apt/sources.list <<-'EOF'
+deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ jammy main restricted universe multiverse
+deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ jammy-updates main restricted universe multiverse
+deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ jammy-backports main restricted universe multiverse
+deb http://security.ubuntu.com/ubuntu/ jammy-security main restricted universe multiverse
+EOF
+```
+
+
+## Ubuntu Ports 20.04
+
+```bash
+tee /etc/apt/sources.list <<-'EOF'
+deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu-ports/ focal main restricted universe multiverse
+deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu-ports/ focal-updates main restricted universe multiverse
+deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu-ports/ focal-backports main restricted universe multiverse
+deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu-ports/ focal-security main restricted universe multiverse
 EOF
 ```
