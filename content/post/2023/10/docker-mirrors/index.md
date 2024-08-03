@@ -21,8 +21,7 @@ categories:
 sudo tee /etc/docker/daemon.json <<-'EOF'
 {
     "registry-mirrors": [
-        "https://docker.m.daocloud.io",
-        "https://dockerproxy.com"
+        "https://docker.m.daocloud.io"
     ]
 }
 EOF
