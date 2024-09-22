@@ -6,7 +6,7 @@ description: curl 和 ssh 都行
 tags:
   - Linux
 categories:
-  - practices
+  - memory
 ---
 
 ## curl
