@@ -11,9 +11,14 @@ tags:
 ---
 
 
-> 240722更新:  
-> 1. 使用镜像源下载安装脚本。
-> 2. 使用清华源替代 install 脚本中的两个镜像源，解决安装速度都拉胯的问题。
+## 更新
+
+### 2024-09-22:
+1. 清华源有时候会同步失败，所以顺便提供一下手动安装的步骤: 
+
+### 2024-07-22:  
+1. 使用镜像源下载安装脚本。
+2. 使用清华源替代 install 脚本中的两个镜像源，解决安装速度都拉胯的问题。
 
 ## 一键安装
 
@@ -55,6 +60,36 @@ docker run hello-world
 # Hello from Docker!
 ```
 
+## 手动安装
+删除旧的：
+```bash
+for pkg in docker.io docker-doc docker-compose podman-docker containerd runc; do apt-get remove -y $pkg; done
+```
+
+安装必要的依赖：
+```bash
+apt-get update
+apt-get install ca-certificates curl gnupg
+```
+
+安装 gpg key 和源，如果是非 ubunt 系统记得改名字：
+```bash
+install -m 0755 -d /etc/apt/keyrings
+curl -fsSL https://mirrors.tuna.tsinghua.edu.cn/docker-ce/linux/ubuntu/gpg | gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+sudo chmod a+r /etc/apt/keyrings/docker.gpg
+echo \
+  "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://mirrors.tuna.tsinghua.edu.cn/docker-ce/linux/ubuntu \
+  "$(. /etc/os-release && echo "$VERSION_CODENAME")" stable" | \
+  tee /etc/apt/sources.list.d/docker.list > /dev/null
+```
+安装 Docker 及其插件
+```bash
+apt-get update
+apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+```
+
 > 参考资料：  
 > [Install Docker Engine on Ubuntu](https://docs.docker.com/engine/install/ubuntu/)  
-> [Getting started with Docker for Arm on Linux | Docker](https://www.docker.com/blog/getting-started-with-docker-for-arm-on-linux/)
+> [Getting started with Docker for Arm on Linux | Docker](https://www.docker.com/blog/getting-started-with-docker-for-arm-on-linux/)  
+> [https://get.docker.com/](https://get.docker.com/)  
+> [docker-ce | 镜像站使用帮助 | 清华大学开源软件镜像站 | Tsinghua Open Source Mirror](https://mirrors.tuna.tsinghua.edu.cn/help/docker-ce/)  
