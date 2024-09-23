@@ -28,7 +28,7 @@ tags:
 # 使用清华源
 export DOWNLOAD_URL="https://mirrors.tuna.tsinghua.edu.cn/docker-ce"
 # 获取脚本
-curl -fsSL https://mirror.ghproxy.com/https://raw.githubusercontent.com/docker/docker-install/master/install.sh -o install-docker.sh
+curl -fsSL https://mirror.ghproxy.com/https://mirror.ghproxy.com/https://raw.githubusercontent.com/docker/docker-install/master/install.sh -o install-docker.sh
 # 执行
 sudo sh install-docker.sh
 # Executing docker install script, commit: 7cae5f8b0decc17d6571f9f52eb840fbc13b2737
