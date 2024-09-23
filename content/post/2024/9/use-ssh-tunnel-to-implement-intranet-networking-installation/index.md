@@ -24,6 +24,15 @@ sudo apt install tmux -o Acquire::http::proxy="http://127.0.0.1:7890/"
 git clone https://github.com/gpakosz/.tmux.git -c "https.proxy=http://127.0.0.1:7890" -c "http.proxy=http://127.0.0.1:7890" 
 ```
 
-## NPM
+## npm
 
-待补充。
+```bash
+npm config set proxy http://127.0.0.1:7890
+npm config set https-proxy http://127.0.0.1:7890
+npm config set strict-ssl false
+set HTTPS_PROXY=http://127.0.0.1:7890
+set HTTP_PROXY=http://127.0.0.1:7890
+export HTTPS_PROXY=http://127.0.0.1:7890
+export HTTP_PROXY=http://127.0.0.1:7890
+export http_proxy=http://127.0.0.1:7890
+```
