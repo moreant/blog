@@ -1,6 +1,7 @@
 ---
 title: '利用 ssh 隧道实现内网机器联网安装'
 slug: 'use-ssh-tunnel-to-implement-intranet-networking-installation'
+image: use-ssh-tunnel-to-implement-intranet-networking-installation.webp
 date: 2024-09-22T18:10:00+08:00
 description: curl 和 ssh 都行
 tags:

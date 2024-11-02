@@ -1,6 +1,7 @@
 ---
 title: '除了 telnet 还有哪些方法检查端口号'
 slug: 'ways-to-check-port-number-besides-telent'
+image: ways-to-check-port-number-besides-telent.webp
 date: 2024-09-22T17:12:00+08:00
 description: curl 和 ssh 都行
 tags:
