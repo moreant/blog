@@ -12,6 +12,12 @@ tags:
 
 
 ## 更新
+### 2025-03-25:
+1. 可以使用这个脚本检查机器是否支持 Docker。
+
+```bash
+curl -sSL https://github.com/moby/moby/raw/master/contrib/check-config.sh | bash
+```
 
 ### 2024-09-22:
 1. 清华源有时候会同步失败，所以顺便提供一下手动安装的步骤: 
@@ -93,3 +99,4 @@ apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docke
 > [Getting started with Docker for Arm on Linux | Docker](https://www.docker.com/blog/getting-started-with-docker-for-arm-on-linux/)  
 > [https://get.docker.com/](https://get.docker.com/)  
 > [docker-ce | 镜像站使用帮助 | 清华大学开源软件镜像站 | Tsinghua Open Source Mirror](https://mirrors.tuna.tsinghua.edu.cn/help/docker-ce/)  
+> [工具分享：检测内核配置是否支持Docker等容器 - Core-3568J - Firefly开源社区工具分享：检测内核配置是否支持Docker等容器](https://dev.t-firefly.com/thread-115083-1-1.html)
