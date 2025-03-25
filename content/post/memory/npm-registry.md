@@ -31,8 +31,6 @@ npm install --registry=https://registry.npmmirror.com
 npm config set registry https://registry.npmmirror.com
 ```
 
-<br><br>
-
 ## 官方源
 
 1. 本项目使用
